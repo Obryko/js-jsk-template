@@ -1,0 +1,27 @@
+{
+  "name": "template",
+  "version": "1.0.0",
+  "description": "\"# js-jsk-template\"",
+  "scripts": {
+    "prebuild": "shx rm -rf build/*",
+    "build": "parcel build src/index.html -d build/ --public-url ./",
+    "prestart": "shx rm -rf dist/*",
+    "start": "parcel build src/index.html -d dist/ --open",
+    "test": "jest",
+    "test:watch": "npm test --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Obryko/js-jsk-template.git"
+  },
+  "author": "Kacper Obrycki",
+  "license": "ISC",
+  "homepage": "https://github.com/Obryko/js-jsk-template#readme",
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "babel-jest": "^25.1.0",
+    "parcel-bundler": "^1.12.4",
+    "shx": "^0.3.2"
+  }
+}
